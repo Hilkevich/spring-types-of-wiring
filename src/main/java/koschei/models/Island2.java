@@ -1,10 +1,14 @@
 package koschei.models;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+//@Component
 public class Island2 {
 
     private Wood3 wood;
 
-    public Island2(Wood3 wood) {
+    public Island2(Wood3 wood) {    //уже является бином в AppConfig! поэтому нет @Autowired
         this.wood = wood;
     }
 
