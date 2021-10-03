@@ -7,15 +7,10 @@ import org.springframework.stereotype.Component;
 public class Rabbit4 {
 
     @Autowired
-    private Duck5 duck;  //+
-
-//    @Autowired                            //+
-//    private Rabbit4(Duck5 duck){         //+
-//        this.duck = duck;                //+
-//    }
+    private Duck5 duck;            // бин через поле.
 
     @Override
     public String toString() {
-        return ", в зайце утка " + duck.toString();       //+ было вместо duck.toString  + ""
+        return ", в зайце утка " + duck.toString();
     }
 }
